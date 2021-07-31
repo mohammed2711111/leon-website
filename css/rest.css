@@ -299,6 +299,9 @@ transition: all 0.5s ease-in-out;
     transition: 0.5s;
     cursor: pointer;
 }
+@media (max-width:300px){
+    .features   .feat
+}
 .features   .feat:hover{
     transform: translateY(10%);
 }
@@ -321,6 +324,14 @@ flex: 1;
 }
 .feat   .text   h2{
     margin: 10px;
+}
+@media(max-width:767px){
+    .features   .feat   p,.features   .feat h1{
+        font-size: 14px;
+    }
+    .features   .feat   .text{
+        width: 250px;
+    } 
 }
     /**************  Special Heading **************/
 .special-heading{
@@ -367,9 +378,25 @@ flex: 1;
 
     justify-content: space-between;
 }
+
 .srv    .text{
 flex: 1;
 margin: 0 0 20px;
+}
+@media(max-width:320px){
+    .srv    .text {
+        flex: 1;
+        margin: 0 0 20px;
+        max-width: 210px;
+    }
+    .srv    .text   h2 {
+        margin: 10px 0 20px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .services   .col{
+        margin: 0 auto;
+    }
 }
 .srv    .text   h2{
     margin: 0 0 20px;
@@ -461,6 +488,11 @@ padding: 60px 0px;
         text-align: center;
     }
 }
+@media(max-width:320px){
+    .portfolio  .port   img {
+        max-width: 300px;
+    }
+}
 
     /**************  About Us **************/
 
@@ -509,7 +541,7 @@ padding: 60px 0px;
 .about  .about-content  .text   p:first-child{
     line-height: 1;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 50px;
     
 }
