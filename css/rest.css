@@ -476,7 +476,7 @@ padding: 60px 0px;
 }
 .about  .about-content  .image{
     position: relative;
-    width: 320px;
+    max-width: 320px;
     height: 230px;
 }
 .about  .about-content  .image::before{
@@ -591,6 +591,9 @@ display: block;
     }
     .contact    .contact-content    .text   a{
         font-size: 15px;
+    }
+    .contact    .special-heading    h1{
+        font-size: 20px;
     }
 }
     /**************  Footer ****************/
