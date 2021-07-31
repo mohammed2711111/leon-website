@@ -89,24 +89,24 @@ body {
 }
 .header .burger {
     right: 1px;
-    left: -475px;
+    left: -495px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 65px;
     height: 53px;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
     z-index: 2;
     right: 6px;
-    transform: translate(475px, 0px);
+    transform: translate(485px, 0px);
 }
 .header .burger .bar{
     position: absolute;
     left:20%;
-    width: 50px;
-    height: 4px;
+    width: 40px;
+    height: 3px;
     background-color: #000;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
@@ -116,18 +116,18 @@ body {
 .header .burger .bar::after{
     content: '';
 position: absolute;
-width: 50px;
-height: 4px;
+width: 40px;
+height: 3px;
 background-color: #000;
 border-radius: 5px;
 box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
 transition: all 0.5s ease-in-out;
 }
 .header .burger .bar::before{
-    transform: translateY(-15px);
+    transform: translateY(-12px);
 }
 .header .burger .bar::after{
-    transform: translateY(16px);
+    transform: translateY(12px);
 }
 /*** Animation */
 .burger.open    .bar{
@@ -259,7 +259,8 @@ transition: all 0.5s ease-in-out;
 .landing
 {
     position: relative;
-    background-image:url('https://wallpaperaccess.com/full/1146666.jpg') ;
+    /* background-image:url('https://wallpaperaccess.com/full/1146666.jpg') ; */
+    background-image:url('../images/Wallpaper\ 26.jpg') ;
     background-size: 1200px;
     height: calc(100vh - 87px);
     background-size: cover;
@@ -272,7 +273,7 @@ transition: all 0.5s ease-in-out;
     top: 50%;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -22%);
+    transform: translate(-50%, 25%);
     text-align: center;
     width: 400px;
     max-width: 100%;
@@ -437,18 +438,20 @@ margin: 0 0 20px;
     position: relative;
     z-index: 1;
 }
-.col    .image  img{
-    max-width: 320px;
+.col    .image  img {
+    width: 255px;
+    position: relative;
+    transform: translate(51px, -51px);
 }
-.col    .image::before{
+.col    .image::before {
     content: "";
     background-color: #4f8696;
     width: 100px;
     height: calc(100% + 100px);
-    position:absolute;
+    position: absolute;
     right: 0px;
-    top: -50px;
     z-index: -1;
+    bottom: 0;
 }
 @media(max-width:1199px){
     .col    .image{
@@ -532,7 +535,7 @@ padding: 60px 0px;
     max-width: 320px;
     height: 230px;
 }
-.about  .about-content  .image::before{
+.about  .about-content  .image::before {
     content: "";
     position: absolute;
     width: 100px;
@@ -542,19 +545,21 @@ padding: 60px 0px;
     z-index: -1;
     top: -50px;
 }
-.about  .about-content  .image::after{
+.about  .about-content  .image::after {
     content: "";
     position: absolute;
     width: 100px;
-    height: 69%;
+    height: 103%;
     border-left: 60px solid #10cab7;
     border-bottom: 60px solid #10cab7;
-    top: -41px;
+    top: -17px;
     right: -126px;
     z-index: -1;
 }
-.about  .about-content  img{
-    max-width: 100%;
+.about  .about-content  img {
+    max-width: 287px;
+    top: 0;
+    height: 345px;
 }
 .about  .about-content  .text{
     flex-basis:calc(100% - 500px);
@@ -586,7 +591,7 @@ padding: 60px 0px;
         text-align: center;
     }
     .about .about-content .image {
-        margin: 0 auto 75px;
+        margin: 0 auto 150px;
     }
 
     .about  .about-content  .image::after {
@@ -606,6 +611,7 @@ padding: 60px 0px;
 .contact{
     padding: 60px 0px;
     background-color: #f6f6f6;
+    margin-top: 63px;
 }
 .contact    .contact-content{
     /* margin-top: 80px; */
@@ -639,14 +645,14 @@ display: block;
 
 /* Media */
 @media(max-width:767px){
-    .contact    .contact-content    h2{
-        font-size: 22px !important;
-    }
+    /* .contact    .contact-content    h2{
+        font-size: 60px !important;
+    } */
     .contact    .contact-content    .text   a{
         font-size: 15px;
     }
     .contact    .special-heading    h1{
-        font-size: 20px;
+        font-size: 60px;
     }
 }
     /**************  Footer ****************/
@@ -731,7 +737,7 @@ color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     width: 100%;
     flex-wrap: wrap
 }
@@ -811,6 +817,12 @@ color: #fff;
     .social-media-extra a {
         height: 80px;
         width: 80px;
+    }
+}
+/* Media */
+@media(max-width:660px){
+    .social-media-extra ul{
+        gap: 20px !important;
     }
 }
 
