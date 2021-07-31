@@ -161,14 +161,13 @@ transition: all 0.5s ease-in-out;
 {
     padding: 10px 0px;
 }
-.header .links  a
-{
-    padding: 20px;
+.header .links  a {
+    padding: 17px;
     text-align: center;
     display: block;
     color: #333;
-    font-size: 17px;
-    margin: 8px;
+    font-size: 15px;
+    margin: 8px 10px;
     transition: 0.3s;
     border-radius: 10px;
     line-height: 0.7;
@@ -193,14 +192,14 @@ transition: all 0.5s ease-in-out;
         width: 100%;
         flex-direction: column;
         position: absolute;
-        top: 52px;
+        top: 51px;
         left: 0;
         background: #101010;
         min-height: calc(100vh - 53px);
         transform: translateX(-100%);
         transition: 0.5s cubic-bezier(0.47, 0, 0.75, 0.72);
         border-radius: 0;
-        z-index: -1;
+        z-index: 0;
     }
     .header .links li {
         width: 100%;
@@ -232,8 +231,30 @@ transition: all 0.5s ease-in-out;
     background-color: #eee !important;
 }
 
+/* @media (max-width:900px) and (min-width:768px) {
+.header .links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .links  a {
+    padding: 13px;
+    text-align: center;
+    display: block;
+    color: #333;
+    font-size: 14px;
+    margin: 8px;
+    transition: 0.3s;
+    border-radius: 10px;
+    line-height: 0.7;
+}
+
+}​ */
 
     /**************  Landing ***************/
+
+
 
 .landing
 {
@@ -299,9 +320,9 @@ transition: all 0.5s ease-in-out;
     transition: 0.5s;
     cursor: pointer;
 }
-@media (max-width:300px){
+/* @media (max-width:300px){
     .features   .feat
-}
+} */
 .features   .feat:hover{
     transform: translateY(10%);
 }
@@ -364,9 +385,9 @@ flex: 1;
     /* background-color: #eee; */
     padding: 60px 0px;
 }
-.services   .container{
+/* .services   .container{
 
-}
+} */
 .services   .service-content{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
