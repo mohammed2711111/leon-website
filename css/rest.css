@@ -20,42 +20,34 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-    /* Mobile */
+    /*** Mobile */
 @media (max-width:767px){
 .container{
     max-width:685px ;
 }
-/* body{
-    background-color: aqua;
-} */
+
 }
     
-  /* Small */
+  /*** Small */
 @media (min-width: 768px) {
 .container {
     width: 750px;
 }
-/* body{
-    background-color: red;
-} */
+
 }
-/* Medium */
+/*** Medium */
 @media (min-width: 992px) {
 .container {
     width: 970px;
 }
-/* body{
-    background-color: blue;
-} */
+
 }
-/* Large */
+/*** Large */
 @media (min-width: 1200px) {
 .container {
     width: 1170px;
 }
-/* body{
-    background-color: rgb(19, 170, 100);
-} */
+
 }
 
 
@@ -63,13 +55,17 @@ body {
 
 
 
-.header
-{
-    background-color: #ddd;
-    position: relative;
-}
+    .header {
+        position: fixed;
+        z-index: 100;
+        left: 0px;
+        top: 0px;
+        background: #ddd;
+        width: 100%;
+    }
 .header .container
 {
+    position: relative;
     background-color: #ddd;
     display: flex;
     align-items: center;
@@ -251,6 +247,16 @@ transition: all 0.5s ease-in-out;
 }
 
 }​ */
+
+@media(max-width:767px){
+    .header .links  a::before{
+        width: 2px;
+        height: 100%;
+        right: 0;
+        top: 0;
+    }
+}
+
 
     /**************  Landing ***************/
 
@@ -595,7 +601,7 @@ padding: 60px 0px;
     }
 
     .about  .about-content  .image::after {
-      display: none;
+     display: none;
     }
     .about  .about-content  .image::before {
 
@@ -765,7 +771,6 @@ color: #fff;
     position: absolute;
     width: 120%;
     height: 120%;
-    /* background-color: #3498db; */
     transform: rotate(45deg);
     left: -145%;
     top: 90%;
