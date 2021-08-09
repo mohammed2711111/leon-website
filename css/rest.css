@@ -59,7 +59,7 @@ body {
         position: fixed;
         z-index: 100;
         left: 0px;
-        top: 0px;
+        top: 0%;
         background: #ddd;
         width: 100%;
     }
