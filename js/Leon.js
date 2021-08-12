@@ -19,3 +19,11 @@ menubtn.addEventListener(`click`,()=>{
         menuOpen=false;
     }
 });
+
+
+window.addEventListener(`scroll`,function(){
+    var header = document.querySelector(`.header`);
+    header.classList.toggle("sticky",window.scrollY > 0 );
+    var lonks = document.querySelector(`ul`);
+    lonks.classList.toggle("lonks-action",window.scrollY > 0 );
+})
